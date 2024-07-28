@@ -1,0 +1,156 @@
+
+/*here is mobile screen */
+
+
+@media (min-width: 370px) and (max-width: 767px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .discription {
+        width: 100%;
+    }
+
+    .my-content {
+        width: 100% !important;
+        text-align: left;
+    }
+
+    .mr-md-5 {
+        font-size: 25px !important;
+        margin-top: 30px;
+    }
+
+    .my-content .welcome {
+        font-size: 50px;
+    }
+
+    .my-content span {
+        font-size: 30px !important;
+
+
+    }
+
+   .rounded-2 .img{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   }
+
+    .rounded-2 .img img {
+        width: 250px;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        font-size: 30px !important;
+        border-radius: 10px;
+
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        margin-top: 15px;
+        background: linear-gradient(to bottom, #bf1edfe7 0%, #0c71accb 100%);
+        border-radius: 12px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        color: rgb(217, 233, 222);
+        border: none !important;
+    }
+
+    .social .pl-lg-4 {
+        padding-left: 10px;
+    }
+
+   .lines-container{
+    width: 80vw;
+   }
+
+   .text{
+    width: 80vw;
+   }
+
+    .my-content .Ahmed .skills {
+        font-size: 25px !important;
+
+    }
+
+    .my-content .mr-md-5 {
+        font-size: 21px !important;
+    }
+
+    nav {
+        width: 90% !important;
+    }
+
+    .about-me .more-me {
+        font-size: 18px;
+
+        width: 90%;
+
+        max-height: 550px;
+
+    }
+
+
+   
+    .cards .card{
+       width: 75vw !important;
+    }
+
+    .card h2{
+        font-size: 19px !important;
+    }
+        .cards .card .pt-2{
+            font-size: 16px !important;
+        }
+
+        .cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #scrollspyHeading3 .projects{
+            width: 61%;
+            padding-left: 6px;
+}
+
+
+.swiper-button-prev,.swiper-button-next {
+display: none !important;
+  }
+
+  #scrollspyHeading4 h2{
+    font-size: 40px;
+    width: 280px;
+  }
+  .mail-form input{
+    width: 350px;
+  }
+  .mail-form .mssg{
+    width: 350px;
+  }
+  .contact-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  #scrollspyHeading3 .projects{
+    width: 240px;
+  }
+  form{
+    padding: 0 20px !important;
+  }
+  .animation-mail{
+    display: none;
+  }
+ }

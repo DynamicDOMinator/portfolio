@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth !important;
+}
+
+.animation-header {
+    height: 100vh;
+    width: 100%;
+   background: linear-gradient(to left, #065c91 0%, #520386 100%);;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+.main-container{
+    position: fixed;
+}
+.lines-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 30%;
+   margin: 0 auto;
+}
+
+.right-line,
+.left-line {
+    width: 2px;
+    height: 400px;
+    background-color: white;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(150, 189, 239);
+    width: 30%;
+    margin: 0 auto;
+    
+}
+
+.text-me{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    background: #00FF00;
+    background: linear-gradient(to left, #00FF00 0%, #00FFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    background: #A7CFDF;
+    background: linear-gradient(to right, #29b3e9 0%, #a912bc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;       
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+nav {
+    position: fixed !important;
+    top: 0;
+    z-index: 1500;
+    background: rgba(212, 208, 208, 0.145);
+    backdrop-filter: blur(10px);
+    height: 70px;
+    border-radius: 16px;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+.nav-link:hover{
+    color: rgb(63, 177, 197);
+    border-bottom: solid green 3px;
+}
+
+
+ .display{
+    opacity: 0;
+    position: relative;
+        overflow: hidden;
+        background: linear-gradient(to right, #561577 30%, #277697 100%);
+ }
+
+ .navbar-brand { 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px !important;
+    background: linear-gradient(to right, #11d6dd 0%, #b30cd4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+ }
+
+ .navbar-toggler-icon img{
+    width: 35px;
+    height: 35px;
+ }
+.discription{
+   width: 65%;
+}
+.rounded-2{
+    overflow: hidden;
+    height: 650px;
+}
+
+.my-content .welcome{
+font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 70px;
+color: orange;
+}
+
+
+
+.my-content .Ahmed .meq{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 800;
+        font-size: 60px;
+        background: #A7CFDF !important;
+        background: linear-gradient(to right,#40bdbd  0%, #91bdce 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+}
+.mt-lg-5{
+    width:500px;
+}
+
+.my-content .skills{
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 650;
+        font-size: 50px;
+        background: linear-gradient(to right, #09c78e 0%, #0cc7d4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.my-content .pt-lg-5{
+        font-size: 35px;
+        font-family: "Changa", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-size: 35px;
+        background: #A7CFDF;
+        background: linear-gradient(to right, #15ace7 0%, #c1f110 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.button-85 {
+    padding: 0.8em 3em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: 700;
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.about-me .about{
+font-family: "Oswald",
+ sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 800;
+ font-style: normal;
+ font-size: 50px;
+ color: white;
+ border-bottom: solid 5px  #e71589;
+ display: inline-block;
+}
+#scrollspyHeading2{
+    overflow: hidden;
+}
+.about-me .about .Test{
+    color:orange;
+}
+
+.about-me .more-me{
+   color:rgb(235, 235, 179);
+   font-size: 25px;
+font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.cards .card {
+    height: auto;
+    background-color:transparent !important;
+    padding: 10px;
+    gap: 12px;
+    border: solid 4px rgb(28, 184, 184) !important;
+    border-radius: 12px !important;
+}
+.cards .card h2{
+    font-size: 25px;
+    font-weight: 700;
+    background: #A7CFDF !important;
+        background: linear-gradient(to right, #b0d648 0%, #91bdce 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+
+}
+
+.cards .card .pt-2{
+font-size: 17px !important;
+color: rgb(235, 235, 179) !important;
+}
+
+ .cards{
+    gap:15px;
+ }
+   .cards .card {
+       height: auto;
+       background-color: transparent !important;
+       padding: 10px;
+       border: solid 4px rgb(28, 184, 184) !important;
+       border-radius: 12px !important;
+   }
+
+ 
+#scrollspyHeading3 .projects{
+        font-family: "Oswald",
+            sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 50px;
+        color: white;
+        border-bottom: solid 5px #e71589;
+        padding-bottom: 15px;
+}
+
+#scrollspyHeading3 .projects span{
+    color: orange;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+    height: 300px;
+    color: #fff;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list .card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.card-list .card-item .user-profession {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top: -55px;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+}
+
+.mail-form{
+    flex: 1;
+}
+
+.animation-mail{
+    flex:1;
+    
+}
+
+#scrollspyHeading4 h2{
+    font-family: "Oswald",
+            sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 50px;
+        color: white;
+        border-bottom: solid 5px #e71589;
+        padding-bottom: 15px;
+        width: 360px;
+}
+
+#scrollspyHeading4 h2 span{
+    color:orange;
+}
+
+.animation-mail img{
+    width: 400px;
+    height: 400px;
+}
+
+.mail-form input{
+    margin-top: 15px;
+    width: 500px;
+    height: 70px;
+    border: none;
+    border-radius: 12px;
+    padding-left: 10px;
+    border: solid 4px rgb(19, 131, 196) !important;
+}
+.mail-form input:focus,.mssg:focus{
+    border: none;
+    outline: none;
+}
+.mail-form .mssg{
+    margin-top: 15px;
+    width: 500px;
+    height: 200px !important;
+    white-space: pre-wrap;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-top: 5px;
+    resize: none;
+    border: solid 4px rgb(19, 131, 196) !important;
+}
+
+.btn {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: 0.125em;
+    --curve-size: 0.5em;
+    --blur: 30px;
+    --bg:transparent;
+    --color: #afffff;
+    color: var(--color);
+    cursor: pointer;
+    /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: 0.5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+    transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+}
+
+@keyframes move-bg7234 {
+    0% {
+        background-position: 31% 0%;
+    }
+
+    50% {
+        background-position: 70% 100%;
+    }
+
+    100% {
+        background-position: 31% 0%;
+    }
+}
+
+.btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+            /* Top-left */
+            var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5),
+            calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+            /* top-right */
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+            /* Top-left */
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            calc(100% - var(--border-width)) var(--border-width),
+            /* top-right */
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+    transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+    color: #fff;
+}
